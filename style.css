@@ -30,7 +30,7 @@ body{
     display:none;
 } 
 
-@media(max-width: 990px) {
+@media(max-device-width: 660px) {
     .top_offer {
         min-width:auto;
     }
@@ -405,30 +405,148 @@ nav ul li {
     animation: left_scroll 45s linear infinite;
   }
 /* marquees CSS ends here */
-
-                .eight-portion
-                {
-                    margin-top: 37px;
-                }
-                .eight-portion-two
-                {
-                display: flex;
-                justify-content: center; 
-                align-items: center;
-                margin-top: 30px;
-                margin-bottom: 10px;
-                font-size: 14px;
-                font-weight: 700;
-                }
-                .eight-portion-two button
-                {
-                width: 200px;
-                height: 36px;
-                padding: 20px;
-                box-sizing: border-box;
-                border-radius: 20px;
-                margin: 0 20px; 
-                }
+.how-block{
+    display: flex;
+    flex-direction: column;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+  
+  
+  
+  .how-button-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  
+  .how-button{
+    font-family: 'PT Sans', sans-serif;
+    font-weight: bold;
+    border: none;
+    border-radius: 25px;
+    width:200px;
+    height: 40px;
+    margin: 10px 10px;
+  }
+  
+  .how-diagram-section{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    font-family: 'PT Sans', sans-serif;
+  
+  }
+  
+  .sidecolumns{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .midcolumn{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .midcolumn-mobile{
+    display: none;
+  }
+  
+  .laptop-lines-above{
+    display:flex;flex-direction:row;justify-content:space-between; margin-bottom:-10px;
+  }
+  .laptop-lines-below{
+    margin-top:-25px; display:flex; flex-direction:row; justify-content:space-between;
+  }
+  
+  @media (max-width: 767px){
+    .how-block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .how-diagram-section{
+      flex-direction: column;
+    }
+      .midcolumn{
+      display: none;
+    }
+    .midcolumn-mobile{
+      display: block;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .sidecolumns{
+      width: 100%;
+    }
+    /* .midcolumn {
+      display: block;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    } */
+    /* .laptop-lines-above{
+      visibility: hidden;
+    }
+    .laptop-lines-below{
+      visibility: hidden;
+    } */
+    .how-button-section{
+      flex-direction: column;
+    }
+  
+  }
+  
+  
+  /*.la1{
+    margin-left:0px;
+    margin-bottom: -15px;
+  }
+  
+  .la2{
+    padding-left: 300px;
+    margin-bottom:-15px;
+  }
+  
+  .la4{
+    padding-left: 300px;
+  }*/
+  
+  .stage-box{
+    width:280px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px grey;
+  }
+  
+  .stage-box p{
+    color: #ee3425;
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .icon{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .icon-heading{
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 10px;
+  }
+  
+  .list-section{
+    font-family: 'PT Sans', sans-serif;
+    margin-left: -20px;
+  
+  }
 
 
 /* Industry CSS begins here */
