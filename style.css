@@ -253,6 +253,8 @@ nav ul li {
                     display: flex;
                     flex-direction: column;
                     padding-left: 50px;
+                    min-width: 1280px;
+                    align-items: center;
                 }
 
                 .Block4-table
@@ -345,6 +347,26 @@ nav ul li {
                     font-weight: 700;
                     font-size: 14px;
                     margin: 0;
+                }
+                @media(max-width: 990px) {
+                    .Block4-productcategory {
+                        flex-direction: column;
+                        align-items: flex-start;
+                    }
+                    .Block4 {
+                        align-items: flex-start;
+                    }
+                    .productbox{
+                        width: 120px;
+                        height:100px;
+                        margin:12px;
+                    }
+                    .Block4-productrow {
+                        padding-left : 0px;
+                    }
+                    .Block4-table {
+                        margin-top: -3rem;
+                    }
                 }
 
 
