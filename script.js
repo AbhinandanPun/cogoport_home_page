@@ -1,22 +1,27 @@
 window.onscroll = () => {
-  const nav = document.querySelector('#navbar');
-  if(this.scrollY <= 10) nav.className = ''; else nav.className = 'scroll';
+  const nav = document.querySelector('.navbar-container');
+  if(this.scrollY <= 10){
+    nav.classList.remove('navbar-container-not-at-top'); 
+  } 
+  else {
+    nav.classList.add('navbar-container-not-at-top');
+  }
 };
 
 
-const removeBtn = document.querySelector('.remove_btn')
-const topOffer = document.querySelector('.top_offer')
-removeBtn.onclick = function (){
-  topOffer.className = 'close';
+const notificationBtn = document.querySelector('.notification-btn')
+const notification = document.querySelector('.notification-container')
+notificationBtn.onclick = function (){
+  notification.className = 'close';
 }
 
-const toggleBtn = document.querySelector('.toggle_btn')
-const toggleBtnIcon = document.querySelector('.toggle_btn i')
-toggleBtn.onclick = function (){
-  toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-}
+// const toggleBtn = document.querySelector('.toggle_btn')
+// const toggleBtnIcon = document.querySelector('.toggle_btn i')
+// toggleBtn.onclick = function (){
+//   toggleBtnIcon.classList = isOpen
+//             ? 'fa-solid fa-xmark'
+//             : 'fa-solid fa-bars'
+// }
 
 // $("#mobile_code").intlTelInput({
 // 	initialCountry: "in",
