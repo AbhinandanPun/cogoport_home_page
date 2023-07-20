@@ -2,7 +2,6 @@
 <html lang="en">
     <head>
         <title>Cogoport - Book & Manage Shpiments & Cargo Online</title>
-        <meta name="viewport" content="width=device-width, initial-scale=2">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">    
@@ -15,7 +14,8 @@
     </head>
   <body>
     <div class="container">
-      <div>
+      <!-- notification -->
+      <div for="notification">
         <div class="notification-container">
           <div class="notification-content">
             <img class="notification-img" width="16" height="16" src="./images/cogoport_icon.webp" alt="">
@@ -29,6 +29,8 @@
           <svg xmlns="http://www.w3.org/2000/svg" fill="#FBDC22" viewBox="0 0 14 14" width="1em" height="1em" role="img" class="notification-btn"><path class="ic-m-cross_svg__ic_m_cross" d="M2.828 2.516a.922.922 0 0 0-.31.311.372.372 0 0 0 .004.353c.033.066.654.704 1.908 1.959L6.288 7 4.43 8.861c-1.254 1.255-1.875 1.893-1.908 1.959-.09.181-.049.348.13.529.172.173.351.217.528.129.066-.033.704-.654 1.959-1.908L7 7.712 8.861 9.57c1.255 1.254 1.893 1.875 1.959 1.908.177.088.355.044.529-.129.173-.174.217-.352.129-.529-.033-.066-.654-.704-1.908-1.959L7.712 7 9.57 5.139c1.254-1.255 1.875-1.893 1.908-1.959.088-.177.044-.356-.129-.528-.181-.179-.348-.22-.529-.13-.066.033-.704.654-1.959 1.908L7 6.288 5.139 4.43C3.884 3.176 3.246 2.555 3.18 2.522a.384.384 0 0 0-.352-.006" fill-rule="evenodd"></path></svg>
         </div>
       </div>
+
+      <!-- navbar -->
       <div class="navbar-container">
         <div role="presentation">
           <button type="button" class="navbar-toggle" aria-label="MobileNav">
@@ -102,10 +104,83 @@
           </li>
         </ul>
       </div>
-      <div class="inner-container">
 
+      <!-- mobile view navbar -->
+      <nav class="toggle-navbar-menu close-mobile-view">
+        <div class="bottom-menu-container" style="position:sticky;">
+          <div class="bottom-menu">
+            <button type="button" class="bottom-menu-button" style="background: #fbdc00;">
+              <h3 class="bottom-menu-heading">Products</h3>
+              <div class="bottom-menu-icon" style="margin-right: 16px;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img"  style="transition: .3s;transform: rotate(90deg);">
+                  <path class="ic-m-arrow_rotate_up_svg__ic_m_arrow_rotate_up" d="M6.907 4.223a.595.595 0 0 0-.152.053c-.038.021-1.179 1.149-2.534 2.507-2.604 2.61-2.518 2.516-2.518 2.718 0 .203.182.432.384.483.151.038 9.679.037 9.83-.001a.546.546 0 0 0 .38-.484c0-.199.084-.109-2.518-2.716-1.355-1.358-2.501-2.488-2.546-2.511a.52.52 0 0 0-.326-.049" fill-rule="evenodd"></path></svg>
+              </div>
+            </button>
+          </div>
+          <div class="bottom-menu">
+            <button type="button" class="bottom-menu-button" style="background: #fbdc00;">
+              <h3 class="bottom-menu-heading">Partners</h3>
+              <div class="bottom-menu-icon" style="margin-right: 16px;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img"  style="transition: .3s;transform: rotate(90deg);">
+                  <path class="ic-m-arrow_rotate_up_svg__ic_m_arrow_rotate_up" d="M6.907 4.223a.595.595 0 0 0-.152.053c-.038.021-1.179 1.149-2.534 2.507-2.604 2.61-2.518 2.516-2.518 2.718 0 .203.182.432.384.483.151.038 9.679.037 9.83-.001a.546.546 0 0 0 .38-.484c0-.199.084-.109-2.518-2.716-1.355-1.358-2.501-2.488-2.546-2.511a.52.52 0 0 0-.326-.049" fill-rule="evenodd"></path></svg>
+              </div>
+            </button>
+          </div>
+          <div class="bottom-menu">
+            <button type="button" class="bottom-menu-button" style="background: #fbdc00;">
+              <h3 class="bottom-menu-heading">Tools</h3>
+              <div class="bottom-menu-icon" style="margin-right: 16px;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img"  style="transition: .3s;transform: rotate(90deg);">
+                  <path class="ic-m-arrow_rotate_up_svg__ic_m_arrow_rotate_up" d="M6.907 4.223a.595.595 0 0 0-.152.053c-.038.021-1.179 1.149-2.534 2.507-2.604 2.61-2.518 2.516-2.518 2.718 0 .203.182.432.384.483.151.038 9.679.037 9.83-.001a.546.546 0 0 0 .38-.484c0-.199.084-.109-2.518-2.716-1.355-1.358-2.501-2.488-2.546-2.511a.52.52 0 0 0-.326-.049" fill-rule="evenodd"></path></svg>
+              </div>
+            </button>
+          </div>
+          <div class="bottom-menu">
+            <button type="button" class="bottom-menu-button" style="background: #fbdc00;">
+              <h3 class="bottom-menu-heading">Company</h3>
+              <div class="bottom-menu-icon" style="margin-right: 16px;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img"  style="transition: .3s;transform: rotate(90deg);">
+                  <path class="ic-m-arrow_rotate_up_svg__ic_m_arrow_rotate_up" d="M6.907 4.223a.595.595 0 0 0-.152.053c-.038.021-1.179 1.149-2.534 2.507-2.604 2.61-2.518 2.516-2.518 2.718 0 .203.182.432.384.483.151.038 9.679.037 9.83-.001a.546.546 0 0 0 .38-.484c0-.199.084-.109-2.518-2.716-1.355-1.358-2.501-2.488-2.546-2.511a.52.52 0 0 0-.326-.049" fill-rule="evenodd"></path></svg>
+              </div>
+            </button>
+          </div>
+          <div class="bottom-menu">
+            <button type="button" class="bottom-menu-button" style="background: #fbdc00;">
+              <h3 class="bottom-menu-heading">Knowledge Center</h3>
+              <div class="bottom-menu-icon" style="margin-right: 16px;">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img"  style="transition: .3s;transform: rotate(90deg);">
+                  <path class="ic-m-arrow_rotate_up_svg__ic_m_arrow_rotate_up" d="M6.907 4.223a.595.595 0 0 0-.152.053c-.038.021-1.179 1.149-2.534 2.507-2.604 2.61-2.518 2.516-2.518 2.718 0 .203.182.432.384.483.151.038 9.679.037 9.83-.001a.546.546 0 0 0 .38-.484c0-.199.084-.109-2.518-2.716-1.355-1.358-2.501-2.488-2.546-2.511a.52.52 0 0 0-.326-.049" fill-rule="evenodd"></path></svg>
+              </div>
+            </button>
+          </div>
+          <div class="bottom-menu">
+            <button type="button" class="bottom-menu-button" style="background: #fbdc00;">
+              <h3 class="bottom-menu-heading">Contact Us</h3>
+            </button>
+          </div>
+        </div>
+        <ul class="mobile-signin">
+          <li class="" role="presentation">
+            <button class="navbar-register-content-btn" type="button">
+              <li>
+                Sign Up
+              </li>
+            </button>
+          </li>
+          <li style="margin-left:20px;display: flex;align-items: center;" class="" role="presentation">
+            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="none" viewBox="0 0 27 27" style="">
+              <path fill="#fff" d="M13.368 26.485c6.946 0 12.577-5.63 12.577-12.576 0-6.946-5.631-12.576-12.577-12.576C6.423 1.333.792 6.963.792 13.909c0 6.946 5.631 12.576 12.576 12.576Z"></path><path fill="#231F20" d="M13.368.843a13.007 13.007 0 0 1 7.306 2.232 13.1 13.1 0 0 1 4.73 5.748 13.048 13.048 0 0 1-1.2 12.391 13.1 13.1 0 0 1-5.75 4.729 13.048 13.048 0 0 1-12.39-1.2 13.1 13.1 0 0 1-4.734-5.748A13.049 13.049 0 0 1 2.535 6.603 13.1 13.1 0 0 1 8.283 1.87 12.984 12.984 0 0 1 13.368.843Zm0 25.152a12.027 12.027 0 0 0 6.757-2.064 12.122 12.122 0 0 0 4.378-5.318 12.069 12.069 0 0 0-1.112-11.462 12.122 12.122 0 0 0-5.318-4.38A12.07 12.07 0 0 0 6.611 3.886a12.123 12.123 0 0 0-4.38 5.318 12.07 12.07 0 0 0 1.115 11.462 12.122 12.122 0 0 0 5.318 4.377 12.01 12.01 0 0 0 4.704.952Z"></path><path fill="#fff" d="M21.738 15.464c-2.374 7.394-12.709 6.916-15.1.964l15.1-.964Z"></path><path fill="#231F20" d="M14.02 21.442a9.571 9.571 0 0 1-2.182-.25 9 9 0 0 1-2.34-.901 7.364 7.364 0 0 1-3.315-3.681.49.49 0 1 1 .908-.365 6.4 6.4 0 0 0 2.883 3.192 8.005 8.005 0 0 0 2.086.8 8.6 8.6 0 0 0 2.267.22 7.826 7.826 0 0 0 4.172-1.333 6.963 6.963 0 0 0 1.638-1.577 7.627 7.627 0 0 0 1.134-2.233.488.488 0 1 1 .932.3 8.608 8.608 0 0 1-1.28 2.519 7.918 7.918 0 0 1-1.869 1.8 8.8 8.8 0 0 1-4.69 1.5c-.116.006-.23.009-.345.009ZM18.71 11.148c-.5 0-.889-.57-.889-1.3 0-.73.391-1.3.89-1.3.497 0 .888.57.888 1.3 0 .73-.39 1.3-.889 1.3Z"></path><path fill="#231F20" d="M18.71 10.87c.338 0 .612-.457.612-1.02s-.274-1.02-.612-1.02c-.338 0-.612.457-.612 1.02s.274 1.02.612 1.02ZM8.416 11.35c.491 0 .89-.58.89-1.297 0-.716-.399-1.297-.89-1.297-.49 0-.889.58-.889 1.297 0 .716.398 1.297.89 1.297Z"></path><path fill="#231F20" d="M7.805 10.053c0 .563.274 1.02.612 1.02.338 0 .612-.457.612-1.02s-.274-1.02-.612-1.02c-.338 0-.612.456-.612 1.02Z"></path><path fill="#fff" d="M14.375 8.83c1.32 1.793 1.888 3.245.9 4.476-.988 1.231-3.655.036-3.655.036"></path><path fill="#231F20" d="M13.851 14.354a4.813 4.813 0 0 1-.867-.085 7.61 7.61 0 0 1-1.568-.478.489.489 0 1 1 .4-.893c.438.185.894.322 1.36.411 1.058.19 1.516-.063 1.714-.308a1.719 1.719 0 0 0 .324-1.6 6.89 6.89 0 0 0-1.234-2.276.489.489 0 0 1 .788-.58 7.766 7.766 0 0 1 1.4 2.622c.11.415.127.849.051 1.27-.088.434-.281.84-.563 1.181-.326.39-.789.64-1.294.7-.169.025-.34.037-.51.036Z"></path>
+            </svg>
+              login
+          </li>
+        </ul>
+      </nav>
+
+      <!-- inner container -->
+      <div class="inner-container">
         <main class="children-container">
 
+          <!-- header with little description and video -->
           <div class="header">
             <div class="header-styles-a header-styles-b header-styles-c header-styles-fixed">
               <div class="header-content-container">
@@ -122,6 +197,7 @@
             </div>
           </div>
 
+          <!-- stats container holds the info of the stats -->
           <div class="stats-container">
             <div class="stats">
               <div class="stats-item">
@@ -143,11 +219,13 @@
             </div>
           </div>
 
+          <!-- to implement the curve before map section -->
           <div style="background: #fffef2;">
             <div class="horizontal-break">
             </div>
           </div> 
 
+          <!-- text with map -->
           <div class="map-container" style="background-color: #fffef3;">
             <div>
               <h1>One Stop Solution for Your Supply Chain</h1>
@@ -158,6 +236,7 @@
             </div>
           </div>
 
+          <!-- list of the products section -->
           <div for="product" style="background-color: #fffef2;">
           <div class="header-styles-a header-styles-b header-styles-fixed" style="background: #fffef2;">
               <h3 class="product-heading">Our Products</h3>
@@ -343,6 +422,7 @@
           
           </div>
           
+          <!-- marquee section using two identical div content with diff classes -->
           <div class="marquee-container">
             <h2>Trusted by</h2>
             <div class="marquee-wrapper">
@@ -379,18 +459,21 @@
             </div>
           </div>
            
+          <!-- know more section with text and a button -->
           <div class="know-more">
             <div class="know-more-text">
               <h3>Ready to take your Supply Chain to the Next Level?</h3>
             </div>
             <a target="_blank" href="https://app.cogoport.com/en-IN/signup" rel="noreferrer" style="text-decoration: none;">
               <button class="know-more-btn" type="button">
-                <div class="know-more-btn-txt">Get Started<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img" style="margin-left: 5px; margin-top: 2px;"><path class="ic-m-arrow_rotate_right_svg__ic_m_arrow_rotate_right" d="M4.375 1.724a.64.64 0 0 0-.12.045.639.639 0 0 0-.239.319c-.019.073-.026 1.483-.026 4.918 0 4.214.004 4.83.035 4.933a.532.532 0 0 0 .476.358c.199 0 .109.084 2.716-2.518 1.492-1.488 2.489-2.501 2.519-2.557a.533.533 0 0 0 .008-.432c-.054-.106-4.9-4.96-5.008-5.016a.612.612 0 0 0-.361-.05" fill-rule="evenodd"></path></svg>
-            </div>
-          </button>
-        </a>
+                <div class="know-more-btn-txt">Get Started 
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img" style="margin-left: 5px; margin-top: 2px;"><path class="ic-m-arrow_rotate_right_svg__ic_m_arrow_rotate_right" d="M4.375 1.724a.64.64 0 0 0-.12.045.639.639 0 0 0-.239.319c-.019.073-.026 1.483-.026 4.918 0 4.214.004 4.83.035 4.933a.532.532 0 0 0 .476.358c.199 0 .109.084 2.716-2.518 1.492-1.488 2.489-2.501 2.519-2.557a.533.533 0 0 0 .008-.432c-.054-.106-4.9-4.96-5.008-5.016a.612.612 0 0 0-.361-.05" fill-rule="evenodd"></path></svg>
+                </div>
+              </button>
+            </a>
           </div>
 
+          <!-- *****laptop section: very difficult took majority of help from official site -->
           <div class="header-styles-a header-styles-b header-styles-fixed">
             <div class="how-container">
               <h3 class="how-container-heading">How it Works</h3>
@@ -521,11 +604,8 @@
               </div>
             </div>
           </div>
-
-
-
-
          
+          <!-- industry served section -->
           <div class="industry-container">
             <h1 style="text-align: center; margin-bottom: 32px; font-size: 1.8rem;">Industries Served</h1>
             <div class="industry-inner-container">
@@ -560,6 +640,7 @@
             </div>
           </div>
 
+          <!-- map container reused for text with image content -->
           <div class="map-container" style="margin-top:6rem;">
             <div>
                 <h1 class="image_text_combo_h1">Get Started Today</h1>
@@ -577,6 +658,7 @@
             </div>
           </div>
           
+          <!-- video -->
           <div for="video">
             <div style="position:relative;">
               <img style="filter: brightness(50%);" src="./images/video_img.PNG" alt="" width="100%" height=450px>
@@ -587,6 +669,8 @@
               </div>
             </div>
           </div>
+
+          <!-- know-more section reused with little modification -->
           <div class="know-more know-more-2">
             <div class="know-more-text">
               <h3  style="color:#fff">Grow Faster with Cogoport</h3>
@@ -594,11 +678,15 @@
             </div>
             <a target="_blank" href="https://app.cogoport.com/en-IN/signup" rel="noreferrer" style="text-decoration: none;">
               <button class="know-more-btn "  type="button"  style="background-color: #fbdc00 !important;">
-                <div class="know-more-btn-txt" style="color:#000; font-weight: bold;">Get Started<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img" style="margin-left: 5px; margin-top: 2px;"><path class="ic-m-arrow_rotate_right_svg__ic_m_arrow_rotate_right" d="M4.375 1.724a.64.64 0 0 0-.12.045.639.639 0 0 0-.239.319c-.019.073-.026 1.483-.026 4.918 0 4.214.004 4.83.035 4.933a.532.532 0 0 0 .476.358c.199 0 .109.084 2.716-2.518 1.492-1.488 2.489-2.501 2.519-2.557a.533.533 0 0 0 .008-.432c-.054-.106-4.9-4.96-5.008-5.016a.612.612 0 0 0-.361-.05" fill-rule="evenodd"></path></svg>
-            </div>
-          </button>
-        </a>
+                <div class="know-more-btn-txt" style="color:#000; font-weight: bold;">Get Started
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="1em" height="1em" role="img" style="margin-left: 5px; margin-top: 2px;"><path class="ic-m-arrow_rotate_right_svg__ic_m_arrow_rotate_right" d="M4.375 1.724a.64.64 0 0 0-.12.045.639.639 0 0 0-.239.319c-.019.073-.026 1.483-.026 4.918 0 4.214.004 4.83.035 4.933a.532.532 0 0 0 .476.358c.199 0 .109.084 2.716-2.518 1.492-1.488 2.489-2.501 2.519-2.557a.533.533 0 0 0 .008-.432c-.054-.106-4.9-4.96-5.008-5.016a.612.612 0 0 0-.361-.05" fill-rule="evenodd"></path></svg>
+                </div>
+              </button>
+            </a>
           </div>
+
+          
+          <!-- blogs section -->
           <div class="blogs-section">
             <h1 style="text-align: center;">Blogs</h1>
             <div class="blog">
@@ -661,9 +749,13 @@
               <button style="height: 40px; width: 150px;border-radius: 4px; border: 1.5px solid transparent;font-size: 1rem; font-weight: 500; color: #fff;background-color: #ee3425;">View All</button>
             </div>
           </div>
+          
+          <!-- ARC implementation -->
           <div style="background-color: #fbdc00; width: 100%; height:5rem;">
             <div style="background-color: white;  width: 100%; height:5rem; border-radius:0 0 80% 80%;"></div>
           </div> 
+          
+          <!-- subscribe section -->
           <div class="subscribe">
             <div class="subscribe-img">
                 <img src="./images/bulb-image.png" style="width:150%; height:auto;" alt=""/>
@@ -685,6 +777,8 @@
                 </form>
             </div> 
           </div>
+
+          <!-- the bottom block with relevant links, drop down not working right now -->
           <div class="bottom-block-2">
             <div class="bottom-inside-block-2">
               <h3 style="color: #434343">Products</h3>
@@ -827,7 +921,7 @@
                 <p>Sign Up</p>
               </a>
             </div>
-            <!-- Products End -->
+
             <div class="bottom-inside-block-2">
               <h3 style="color: #434343">Knowledge Center</h3>
 
@@ -866,6 +960,7 @@
             </div>
           </div>
           
+          <!-- simple routes section -->
           <div class="Routes">
             <div class="routes-column">
                 <a href=""><p>Mandideep (IN) to Port Louis</p></a>
@@ -904,6 +999,8 @@
                 <a href=""><p>Mandideep (IN) to Novorossiysk</p></a>
             </div>
           </div>
+          
+          <!-- bottom menu appears on media max-width 767 rule -->
           <div class="bottom-menu-container">
             <div class="bottom-menu">
               <button type="button" class="bottom-menu-button" style="background: #fbdc00;">
@@ -956,6 +1053,8 @@
               </button>
             </div>
           </div>
+
+          <!-- footer or social media section -->
           <div class="last-component">
             <div class="last-component-one">
               <p style="padding-left: 35px; font-size: 12px; color : #2c3e50; font-weight: 700; padding-right: 50px;">© 2023 Cogo Universe PTE. All rights reserved.</p>
@@ -967,9 +1066,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 14 14" width="16" height="16" role="img"><path d="M4.484 1.029c-1.112.067-1.88.36-2.465.941a2.69 2.69 0 0 0-.595.818c-.185.377-.296.759-.378 1.307-.046.307-.046 5.48 0 5.787.154 1.028.412 1.589.986 2.146.517.501 1.093.763 1.993.903.321.05.372.051 2.893.053 2.692.001 2.688.001 3.335-.106a3.076 3.076 0 0 0 1.729-.872c.373-.373.601-.75.783-1.294.16-.481.186-.699.209-1.799.028-1.35.027-3.982-.002-4.375a7.581 7.581 0 0 0-.166-1.143 3.046 3.046 0 0 0-.876-1.461c-.557-.53-1.306-.825-2.305-.907-.332-.027-4.683-.026-5.141.002m4.7 1.07c.456.026.913.083 1.151.144a2.061 2.061 0 0 1 1.259 1c.173.325.214.485.275 1.081.079.766.06 5.12-.025 5.604-.08.457-.17.713-.347.985-.361.556-.829.822-1.676.955-.511.081-5.327.059-5.784-.025-.612-.113-.981-.292-1.308-.634-.399-.418-.552-.834-.629-1.712-.031-.356-.03-4.639.001-4.994.033-.383.11-.798.188-1.012.233-.642.84-1.162 1.5-1.286.202-.037.633-.078 1.088-.103.478-.026 3.855-.028 4.307-.003m.756 1.022c-.146.051-.353.263-.404.412a.737.737 0 0 0 .364.906c.142.076.474.076.617 0a.71.71 0 0 0 .326-.328c.056-.114.065-.161.065-.331 0-.16-.01-.217-.053-.297a.727.727 0 0 0-.343-.337.559.559 0 0 0-.304-.064 1 1 0 0 0-.268.039m-3.465.835a3.092 3.092 0 0 0-2.402 2.067 2.948 2.948 0 0 0-.153.98c0 .849.32 1.605.932 2.198.438.425.953.698 1.553.823.291.061.899.061 1.177.001.284-.062.52-.143.76-.26.873-.427 1.471-1.201 1.682-2.183.059-.274.06-.888.001-1.165-.255-1.21-1.122-2.119-2.306-2.418-.203-.051-.305-.062-.649-.069a3.009 3.009 0 0 0-.595.026m.879 1.071a1.993 1.993 0 0 1 1.587 1.501 2.22 2.22 0 0 1-.002.95 2.043 2.043 0 0 1-1.202 1.378 1.69 1.69 0 0 1-.749.135 1.755 1.755 0 0 1-.845-.182 2.008 2.008 0 0 1-.866-2.845c.127-.213.407-.503.625-.646.42-.276.968-.386 1.452-.291" fill-rule="evenodd"></path></svg>
             </div>
           </div>
-
-
-          
+        </main>
       </div>
     </div>
     <script src="script.js"></script>
